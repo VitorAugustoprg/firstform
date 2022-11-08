@@ -1,0 +1,1 @@
+alert('Atenção, todas as informações colocadas aqui serão enviadas ao Governo do estado de São Paulo com base na lei de proteção de informações N° 122./10'); 

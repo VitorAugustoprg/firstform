@@ -8,22 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="get">
      <main id="menu">
        
         <div id="menu-acess">
             <div id="retangulo-top"></div>
         </div>
         <div id="login">
-            <label for="e-mail">E-mail</label> 
-            <input type="email" name="e-mail" id="e-mail"> 
+            <label for="e-mail" id="email-name">E-mail</label> 
+            <input type="email" name="e-mail" id="e-mail" required placeholder="Digite seu E-mail"> 
 
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password">
+            <label for="password" id="senha-name">Senha</label>
+            <input type="password" name="password" id="password" required placeholder="Digite sua Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"             title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e 8 caracteres"
+            >
+            <button type="submit">Enviar</button>
+            <p id="esqueceu-senha"><a href="#">Esqueceu a senha?</a></p>
         </div>
         <header> <h2 id="title">LOGIN</h2></header>
        
         </main>
     </form>
+
+    <script src="javasript.js"></script>
 </body>
 </html>

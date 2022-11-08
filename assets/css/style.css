@@ -1,3 +1,7 @@
+ @font-face {
+   font-family: 'Lato-Light';
+   src: url(/assets/fonts/Lato-Light.ttf) format(truetype);
+}
  * {
     margin: 0;
  }
@@ -47,6 +51,7 @@ header {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
    background-color: whitesmoke;
    width: 290px;
    height: 250px;
@@ -55,16 +60,45 @@ header {
    z-index: 3;
 }
 #e-mail {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   width: 190px;
-   margin: 0;
- 
-}
-#password {
-   display: flex;
-   width: 190px;
+   width: 170px;
+   height: 12px;
    
-  
+
+} 
+
+#password {
+   width: 170px;
+   height: 12px;
+}
+#email-name {
+   display: flex;
+   height: 22px;
+   margin: 5px;
+   
+}
+#senha-name {
+   display: flex;
+   height: 20px;
+   margin: 5px;
+}
+button {
+   display: flex;
+   margin: 12px;
+   border: 1px solid black;
+   
+}
+
+#esqueceu-senha:hover {
+   background-color: green;
+   border-radius: 9px;
+   border: 2px solid #178836;
+}
+p > a{
+   text-decoration: none;
+   margin: 10px;
+   color: white;
+   border: 2px solid #178836;
+   background-color: #178836;
+   border-radius: 9px;
+   
 }
